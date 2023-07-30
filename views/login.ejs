@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./login.css">
+ <title>Document</title>
+</head>
+<body>
+  <header>
+    <%- include("partials/header",{title:"Treasure Hunt"}); %>
+    </header>
+ <div class="container">
+  <h2 class="login-title">Log in</h2>
+
+  <form class="login-form" action="/login" method="post">
+    <div>
+      <label for="email">Email </label>
+      <input
+             id="email"
+             type="email"
+             placeholder="me@example.com"
+             name="email"
+             required
+             />
+    </div>
+    <div>
+      <label for="password">Password </label>
+      <input
+             id="password"
+             type="password"
+             placeholder="password"
+             name="password"
+             required
+             />
+    </div>
+    <div class="row right">
+      <p id="errorHandler"><%=locals.message%></p>
+    </div>
+    <div class="reg">
+     <p>don't have a account </p>
+     <a href="/registerpage">Sign Up</a>
+    </div>
+    <button class="btn btn--form" type="submit" value="Log in">
+      Log in
+    </button>
+  </form>
+</div>
+</body>
+</html>

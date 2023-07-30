@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Linking Favicon, Apple Touch Icon, Font Awesome, AOS, Materialize & CSS  -->
+    <link rel="icon" href="./img/favicon.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        defer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="spacing.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Title -->
+    <title>Treasure Hunt</title>
+
+    <!-- No Script -->
+    <noscript>Please enable JavaScript to open this page.</noscript>
+
+</head>
+
+<!-- Home Page -->
+
+<body id="body">
+    <header>
+        <%- include("partials/header",{title:"Treasure Hunt"}); %>
+     </header>
+    
+    <!-- Welcome -->
+    <form action="/load" method="get">
+    <div class="container">
+        <div class="row center center-align">
+            <h1 class="overlay-text center animated bounce">Welcome to Treasure <i>Hunt</i> !</h1>
+        </div>
+        <div class="overlay-text animated bounce">
+            <div class="row center">
+                <!-- Heading -->
+                <h2 class="center heading-underline">Win you Treasure</h2>
+            </div>
+            <!-- Content -->
+            <div class="row center">
+                <h5>I have made 5 clues of different types. You have to solve them.</h5>
+            </div>
+            <!-- Button -->
+            <div class="row center">
+                <button class="btn btn-mystery waves-effect waves-light" id="startJourney">Start Journey</button>
+            </div>
+            <!-- Note -->
+            <div class="row center">
+                <h6 class="grey-text">P.S: This page doesn't have any Puzzle. Just click the button above to get started.</h6>
+            </div>
+        </div>
+    </div>
+</form>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

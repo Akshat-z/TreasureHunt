@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Linking Favicon, Apple Touch Icon, Font Awesome, AOS, Materialize & CSS  -->
+<link rel="icon" href="./img/favicon.jpg" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        defer>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./spacing.css">
+    <link rel="stylesheet" href="./index.css">
+
+<!-- Title -->
+<title>Treasure Hunt</title>
+
+<!-- No Script -->
+<noscript>Please enable JavaScript to open this page.</noscript>
+</head>
+<body id="body">
+    <header>
+        <%- include("partials/header",{title:"Treasure Hunt"}); %>
+        </header>
+      <!-- Welcome -->
+    <div class="container mb-5">
+     <div class="row center center-align">
+         <h1 class="overlay-text center animated bounce">LEVEL quattor</h1>
+     </div>
+     <div class="overlay-text animated bounce">
+         <div class="row center">
+             <!-- Heading -->
+             <h2 class="center heading-underline">I hope you remember the previous hint.</h2>
+         </div>
+         <!-- Content -->
+         <div class="row center">
+             <h5>In which language is the number 3 written in the previous puzzle?</h5>
+         </div>
+         <!-- Error Handling -->
+ <div class="row center">
+    <p id="errorHandler"><%=locals.message%></p>
+</div>
+<!-- Note -->
+<div class="row center">
+    <h6 class="grey-text"><%=locals.hint%></h6>
+</div>
+            <!-- Form -->
+            <form action="/puzzle4" method="post" class="row center">
+                    <input type="text" id="firstTimeOutside" class="white-text" name="ans4" required>
+                    <button type="submit" class="btn btn-mystery waves-effect waves-light" id="submitAnswer">Submit Answer</button>
+                <!-- </div> -->
+                </form>
+      </div>  
+    </div>
+</div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+        crossorigin="anonymous"></script>
+</body>
+</html>
