@@ -54,8 +54,8 @@ Dashboard for admin for tracking user data: Yes </br>
 Start again on window refresh: No
 
 ## Important Links:
-GitHub Repository URL: https://github.com/Akshat-z/eLitmus-Assignment <br/>
-Website URL: https://elitmus-assignment.onrender.com/ <br/>
+GitHub Repository URL: https://github.com/Akshat-z/TreasureHunt <br/>
+Website URL: https://treasurehunt-fctr.onrender.com <br/>
 
 ## Technologies Used:
 #### Frontend Technologies: <img alt="HTML5" src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"/> <img alt="CSS3" src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"/> <img alt="Bootstrap 5" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white"/> <img alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>
