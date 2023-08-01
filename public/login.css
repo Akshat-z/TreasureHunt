@@ -111,3 +111,8 @@ button {
  background-color: #fdf2e9;
  color: #5f8acb;
 }
+
+.error{
+	color: #daa520;
+	font-weight: 800;
+}

@@ -7,9 +7,21 @@
     <title>LeaderBoard</title>
     <style>
       body {
-        background-position: center;
+        background-image: url(./img/back1.jpg);
+        /* background-position: center;    */
         background-repeat: no-repeat;
         background-size: cover;
+      }
+
+      #data{
+        color: white;
+      }
+      .name{
+        color: yellow;
+        font-weight: 700;
+      }
+      .head{
+        color: #daa520;
       }
     </style>
     <link
@@ -20,17 +32,17 @@
     />
   </head>
   <body>
-    <h1 class="text-center">LEADERBOARD</h1>
+    <h1 class="text-center head">LEADERBOARD</h1>
     <div class="container">
       <table class="table">
         <thead class="table-dark">
           <tr>
-            <th scope="col">name</th>
-            <th scope="col">level1</th>
-            <th scope="col">level2</th>
-            <th scope="col">level3</th>
-            <th scope="col">level4</th>
-            <th scope="col">level5</th>
+            <th scope="col">Name</th>
+            <th scope="col">Puzzle 1</th>
+            <th scope="col">Puzzle 2</th>
+            <th scope="col">Puzzle 3</th>
+            <th scope="col">Puzzle 4</th>
+            <th scope="col">Puzzle 5</th>
           </tr>
         </thead>
         <tbody id="data"></tbody>
@@ -38,7 +50,7 @@
     </div>
 
     <script>
-      let x = "https://treasurehunt-fctr.onrender.com/view";
+      let x = "http://localhost:4000/view";
       fetch(x)
         .then((data) => {
           return data.json();
@@ -50,7 +62,7 @@
               ObjectData.data[i];
             tableData += `
          <tr>
-           <td>${name}</td>
+           <td class="name">${name}</td>
             <td>${puzzle1}</td>
              <td>${puzzle2}</td>
               <td>${puzzle3}</td>
