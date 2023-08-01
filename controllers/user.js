@@ -71,11 +71,15 @@ export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
     const isuser = await user.findOne({ email });
-    if (!isuser)
+    if (!isuser){
       res.render("login.ejs", { message: "User doesn't exist, first sign up" });
+      return;
+    }
     const isMatch = await bcrypt.compare(password, isuser.password);
-    if (!isMatch)
+    if (!isMatch){
       res.render("login.ejs", { message: "Password is not correct" });
+      return;
+    }
     const token = jwt.sign({ _id: isuser._id }, process.env.JWT_SECRET);
     await res.cookie("token", token, {
       httpOnly: true,
